@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FaceRequestViewController">
+            <connections>
+                <outlet property="gid" destination="Ssd-eG-PyD" id="tPF-90-z7m"/>
+                <outlet property="photo" destination="Mxw-GT-RdC" id="y8N-Ua-RYA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-g3-sgt">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="PiQ-IQ-S4m"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="选择图片" id="gcP-AG-o4b">
+                            <connections>
+                                <action selector="selectorPhoto:" destination="-1" id="2FR-my-21k"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="uf6-Zu-zHM"/>
+                        <barButtonItem title="识别图片" id="Lke-fT-oEe">
+                            <connections>
+                                <action selector="discernPhoto:" destination="-1" id="LdE-bD-w03"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="Mxw-GT-RdC">
+                    <rect key="frame" x="0.0" y="124" width="375" height="499"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请先注册人脸获取人脸 gid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssd-eG-PyD">
+                    <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.9152866006" green="0.24655312300000001" blue="0.20107686520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ssd-eG-PyD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="5Jc-Zg-wku"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="qCv-g3-sgt" secondAttribute="bottom" id="9hW-Qs-xR9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Mxw-GT-RdC" secondAttribute="trailing" id="Idj-hK-TYb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ssd-eG-PyD" secondAttribute="trailing" id="Lc0-8u-im3"/>
+                <constraint firstItem="Mxw-GT-RdC" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="104" id="Mba-uS-H3q"/>
+                <constraint firstItem="qCv-g3-sgt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="PHz-7I-E3W"/>
+                <constraint firstItem="Mxw-GT-RdC" firstAttribute="top" secondItem="Ssd-eG-PyD" secondAttribute="bottom" id="Q7U-Ae-cBH"/>
+                <constraint firstItem="Mxw-GT-RdC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Yaf-B7-xBR"/>
+                <constraint firstItem="Ssd-eG-PyD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="cBT-qQ-k5D"/>
+                <constraint firstItem="qCv-g3-sgt" firstAttribute="top" secondItem="Mxw-GT-RdC" secondAttribute="bottom" id="fL9-eb-YGx"/>
+                <constraint firstItem="qCv-g3-sgt" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="lLv-30-gue"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="default" width="706" height="1013"/>
+    </resources>
+</document>
