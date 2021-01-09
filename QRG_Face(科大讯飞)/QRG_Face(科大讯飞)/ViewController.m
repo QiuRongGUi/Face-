@@ -40,6 +40,10 @@
     self.table.tableFooterView = [UIView new];
     
   NSLog(@"脸脸脸脸脸");
+  NSLog(@"脸脸脸脸脸");
+  NSLog(@"脸脸脸脸脸");
+  NSLog(@"脸脸脸脸脸");
+
   
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
