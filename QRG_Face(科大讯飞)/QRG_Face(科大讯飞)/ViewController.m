@@ -36,7 +36,7 @@
     [super viewDidLoad];
 
     self.navigationItem.title = @"讯飞人脸识别";
-    
+    self.navigationItem.title = @"讯飞人脸识别";
     self.table.tableFooterView = [UIView new];
     
   NSLog(@"脸脸脸脸脸");
